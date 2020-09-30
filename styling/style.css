@@ -1,0 +1,196 @@
+:root {
+  --first-color: #f3f3f3;
+  --second-color: #ccc;
+  --third-color: rgb(255, 255, 255);
+  --fourth-color: #ffffff;
+  --fifth-color: #000000;
+}
+
+/* Main Elements */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+body {
+  background-color: var(--first-color);
+}
+
+label {
+  top: 3px;
+  line-height: 24px;
+  font-size: 15px;
+}
+
+li {
+  margin: 0 0.5rem;
+}
+
+
+p {
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+span {
+  color: white;
+}
+
+a:hover {
+  font-weight: 900;
+}
+
+
+/* Stop Watch Elements */
+
+h1 {
+  font-size: 1.5em;
+}
+
+button {
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 10px 30px;
+  background: transparent;
+  border: 1px solid var(--second-color);
+  border: var(--second-color);
+  border-radius: 8px;
+  outline: 0;
+  transition: all ease 300ms;
+  color: rgb(0, 0, 0);
+}
+
+button:hover:not(.startstop) {
+  font-weight: 900;
+}
+
+.cell {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+.time {
+  display: flex;
+  align-self: center;
+  font-size: 1.10rem;
+}
+
+.startstop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 900;
+  color: white !important;
+  width: 3rem;
+}
+
+/* Classes & IDs */
+/* IDs */
+#whole-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Classes */
+.navbar-brand {
+  color: var(--fourth-color);
+  text-shadow: #EEEE00 0 0 6px;
+  font-size: 1.4rem;
+  transition: 0.5s;
+}
+
+.navbar-brand:hover {
+  text-shadow: #EEEE00 0 0 10px;
+}
+
+.box-center {
+  position: sticky;
+  background-color: var(--third-color);
+  border-radius: 1.5rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  z-index: 0;
+}
+
+.sudokuBoard {
+  display: grid;
+  grid-template-columns: repeat(9, 9fr);
+  gap: 0;
+  margin: 1rem;
+  background-color: #d4d4d4be;
+  z-index: 1;
+}
+
+.edit {
+  font-size: 1.75rem;
+  width: 44px;
+  height: 44px;
+  border: 0.5px solid var(--fifth-color);
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.edit input {
+  font-size: 1.75rem;
+  color: #000000;
+  width: 44px;
+  border: 0px;
+  background: none !important;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+/* Custom borders */
+
+.b-left {
+  border-left: 4px solid #000000;
+}
+
+.b-top {
+  border-top: 4px solid #000000;
+}
+
+.b-right {
+  border-right: 4px solid #000000;
+}
+
+.b-bottom {
+  border-bottom: 4px solid #000000;
+}
+
+/* Custom buttons */
+
+.btn-game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem;
+}
+
+/* Responsive Screens */
+
+@media only screen and (max-width: 1200px) {
+  /* For wearables: */
+  .responsive > * {
+   margin: 0.25rem;
+  }
+  .cell {
+    display:none;
+  }
+}

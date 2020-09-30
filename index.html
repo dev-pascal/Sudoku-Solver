@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="./styling/style.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./styling/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./styling/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./styling/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./styling/favicon/site.webmanifest">
+    <title>Generate, Play and Visualize Sudokus!</title>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="whole-navbar">
+            <a class="navbar-brand" href="#">Sudoku Solver 数独</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto responsive-navbar">
+                        <li class="btn-group">
+                            <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" id="difficulty">
+                                ☐ Select Difficulty
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" id="dropdown-item-a" href="#">Easy</a>
+                                <a class="dropdown-item" id="dropdown-item-b" href="#">Normal</a>
+                                <a class="dropdown-item" id="dropdown-item-c" href="#">Heroic</a>
+                                <a class="dropdown-item" id="dropdown-item-d" href="#">Legendary</a>
+                            </div>
+                        </li>
+                        <li class="btn-group">
+                            <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" id="algorithm">
+                                ☐ Algorithm Solver
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" id="dropdown-item-i" href="#">Backtracking</a>
+                                <a class="dropdown-item" id="dropdown-item-ii" href="#">Best First Search</a>
+                                <a class="dropdown-item" id="dropdown-item-iii" href="#">Knuth's Dancing Links</a>
+                                <a class="dropdown-item" id="dropdown-item-iv" href="#">Simulated Annealing</a>
+                            </div>
+                        </li>
+                        <li class="btn-group responsive">
+                            <button type="button" class="btn btn-info" id="start"
+                                style="opacity: 1; border-radius: 3rem; width: 9rem">
+                                ♣ New Game</button>
+                        </li>
+                        <li class="btn-group responsive">
+                            <button type="button" class="btn btn-info" id="solve"
+                                style="opacity: 1; border-radius: 3rem; width: 9rem">
+                                ★ Solve Board</button>
+                        </li>
+                        <li>
+                            <div class="cell">
+                                <button class="startstop" id="startstop">►</button>
+                                <div class="time">
+                                    <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </div>
+    <main>
+        <div class="box-center">
+            <div class="sudokuBoard" id="sudokuBoard"></div>
+            <ul class="navbar-nav mr-auto btn-game">
+                <li class="btn-group ma-narrow">
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false"
+                        autocomplete="off" id="freeze" style="opacity: 1; width: 7rem">
+                        ❆ Freeze
+                    </button>
+                </li>
+                <li class="btn-group ma-narrow">
+                    <button type="button" class="btn btn-primary" id="submit" style="opacity: 1; width: 7rem"> ⤴
+                        Submit</button>
+                </li>
+                <li class="btn-group ma-narrow">
+                    <button type="button" class="btn btn-primary" id="check" style="opacity: 1; width: 7rem"> ✓
+                        Check</button>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+    </div>
+    <! -- Internal Scripts -->
+        <script src="./Public/Freeze.js"></script>
+        <script src="./Public/Timer.js"></script>
+        <script src="./Public/browser/Board.js"></script>
+        <script src="./Public/browser/Check.js"></script>
+        <script src="./Public/browser/DiffAlgo.js"></script>
+        <script src="./Public/browser/New.js"></script>
+        <script src="./Public/browser/Submit.js"></script>
+        <script src="./Public/browser/Algorithms/Bestfirstsearch.js"></script>
+        <script src="./Public/browser/Algorithms/Backtracking.js"></script>
+        <script src="./Public/browser/Algorithms/Knuthdlx.js"></script>
+        <script src="./Public/browser/Algorithms/Simulatedannealing.js"></script>
+        <script src="./Public/browser/Algorithms/Solverhelper.js"></script>
+        <! -- External Scripts -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+                integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+                crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+                integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+                crossorigin="anonymous"></script>
+            <script>
+                window.onload = createNine();
+                window.onload = createBoard();
+                window.onload = difficultyEasy();
+            </script>
+</body>
+
+</html>
