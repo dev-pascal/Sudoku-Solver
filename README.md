@@ -12,10 +12,10 @@ In sudoku, the objective is to fill a 9×9 grid with digits so that each column,
 This light-weight web app can generate, play and visualize Sudokus.
 
 In order to set new Sudoku puzzle, there are four board difficulty levels:
-* Easy (= 45-50 empty cells)
-* Normal (= 50-55 empty cells)
-* Hard (= 55-60 empty cells)
-* Legendary (= 60-65 empty cells)
+* Easy
+* Normal
+* Hard
+* Legendary
 
 A user can then decide to solve the board via algorithm or on her own. Regarding the former, there are currenlty four algorithms incl. solution time tracker implemented to solve a grid:
 * Backtracking
