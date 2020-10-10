@@ -24,7 +24,7 @@ A user can solve the board via algorithm. There are currenlty four algorithms im
 * Knuth's Dancing Links
 * Simulated Annealing
 
-To play the Sudoku grid via hand, several UI/UX elements have been integrated:
+To play the Sudoku grid via hand, UI/UX elements are included:
 * Freeze Mode
 * Submission Button
 * Solution Checker
