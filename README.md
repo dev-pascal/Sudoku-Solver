@@ -1,8 +1,8 @@
 # Sodoku Solver
 
-## Live Demo (use Google Chrome)
+## Live Demo - Try it out yourself!
 
-https://dev-pascal.github.io/Sudoku-Solver/
+https://dev-pascal.github.io/Sudoku-Solver/  (use Google Chrome)
 
 ## About Sudoku
 
