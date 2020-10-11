@@ -2,7 +2,7 @@
 
 ## Live Demo - Try it out yourself!
 
-https://dev-pascal.github.io/Sudoku-Solver/  (use Google Chrome)
+https://dev-pascal.github.io/Sudoku-Solver/  (use Google Chrome!)
 
 ## About Sudoku
 
@@ -18,13 +18,13 @@ In order to set new Sudoku puzzle, there are four board difficulty levels:
 * Hard
 * Legendary
 
-A user can solve the board via algorithm. There are currenlty four algorithms implemented to solve a grid:
+A user can solve the board via algorithm. There are currenlty four algorithms included to solve a grid:
 * Backtracking
 * Best First Search
 * Knuth's Dancing Links
 * Simulated Annealing
 
-To play the Sudoku grid via hand, UI/UX elements are included:
+To play the Sudoku grid via 'hand', the follwing UI-elements are included:
 * Freeze Mode
 * Submission Button
 * Solution Checker
