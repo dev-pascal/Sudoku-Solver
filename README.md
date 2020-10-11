@@ -32,5 +32,6 @@ To play the Sudoku grid via hand, UI/UX elements are included:
 
 ## Built with
 * HTML
-* CSS & Bootstrap 4
+* CSS
+* Bootstrap 4
 * Vanilla JavaScript
