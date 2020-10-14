@@ -1,6 +1,6 @@
 # Sodoku Solver
 
-## Live Demo - Try it out yourself!
+## Live Demo
 
 https://dev-pascal.github.io/Sudoku-Solver/  (use Google Chrome!)
 
