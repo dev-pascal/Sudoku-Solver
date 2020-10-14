@@ -12,19 +12,19 @@ In sudoku, the objective is to fill a 9×9 grid with digits so that each column,
 
 This light-weight web app can generate, play and visualize Sudokus.
 
-1) In order to set new Sudoku puzzle, there are four board difficulty levels:
+In order to set new Sudoku puzzle, there are four board difficulty levels:
 * Easy
 * Normal
 * Hard
 * Legendary
 
-2) A user can solve the Sudoku board via algorithm. There are currenlty four algorithms included to solve a grid:
+A user can solve the Sudoku board via algorithm. There are currenlty four algorithms included to solve a grid:
 * Backtracking
 * Best First Search
 * Knuth's Dancing Links
 * Simulated Annealing
 
-3) To play a Sudoku board via hand, the following UI-features are included:
+To play a Sudoku board via hand, the following UI-features are included:
 * Freeze Mode
 * Submission button
 * Solution checker
