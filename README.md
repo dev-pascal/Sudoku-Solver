@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-https://PS6790.github.io/Sudoku-Solver/  (use Google Chrome!)
+https://PS6790.github.io/Sudoku-Solver/  (optimized for Google Chrome)
 
 ## About Sudoku
 
