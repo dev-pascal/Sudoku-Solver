@@ -12,7 +12,7 @@ In sudoku, the objective is to fill a 9×9 grid with digits so that each column,
 
 This light-weight web app allows you to play and solve Sudokus. In order to set new Sudoku puzzle, there are four board difficulty levels ranging from easy to heroic.
 
-A user can solve the Sudoku board via algorithm. There are currenlty four algorithms included to solve a grid:
+A user can solve the Sudoku board via algorithm. There are four algorithms implemented to solve a grid:
 * Backtracking
 * Best First Search
 * Knuth's Dancing Links
