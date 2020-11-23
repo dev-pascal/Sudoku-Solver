@@ -13,16 +13,16 @@ In sudoku, the objective is to fill a 9×9 grid with digits so that each column,
 This light-weight web app allows you to play and solve Sudoku grids. In order to set new Sudoku, there are four board difficulty levels ranging from easy to heroic.
 
 The following UI-features are included:
-• Freeze Mode
-• Submission button
-• Solution checker
-• Stopwatch
+* Freeze Mode
+* Submission button
+* Solution checker
+* Stopwatch
 
 A user also can solve the Sudoku board via algorithm since there are four algorithms implemented to solve the grid:
-• Backtracking
-• Best First Search
-• Knuth's Dancing Links
-• Simulated Annealing
+* Backtracking
+* Best First Search
+* Knuth's Dancing Links
+* Simulated Annealing
 
 Built with: HTML, CSS, Bootstrap 4, Vanilla Javascript
 (Please use Google Chrome!)
