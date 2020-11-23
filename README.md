@@ -18,14 +18,11 @@ The following UI-features are included:
 * Solution checker
 * Submission button
 
-A user also can solve the Sudoku board via algorithm since there are four algorithms implemented to solve the grid:
+The board can also be solved via four algorithms:
 * Backtracking
 * Best First Search
 * Knuth's Dancing Links
 * Simulated Annealing
-
-Built with: HTML, CSS, Bootstrap 4, Vanilla Javascript
-(Please use Google Chrome!)
 
 ## Built with
 * HTML
