@@ -14,9 +14,9 @@ This light-weight web app allows you to play and solve Sudoku grids. In order to
 
 The following UI-features are included:
 * Freeze Mode
-* Submission button
-* Solution checker
 * Stopwatch
+* Solution checker
+* Submission button
 
 A user also can solve the Sudoku board via algorithm since there are four algorithms implemented to solve the grid:
 * Backtracking
